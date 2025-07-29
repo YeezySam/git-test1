@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartes avec Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    Hello world Mr.Sam
+<body class="bg-gray-100 p-6">
+  <h1 class="text-3xl font-bold text-center mb-6">Mes cartes</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <!-- Carte 1 -->
+    <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-2xl transition">
+      <h2 class="text-xl font-semibold mb-2">Carte 1</h2>
+      <p class="text-gray-600">Ceci est un exemple de carte avec Tailwind CSS.</p>
+    </div>
+
+    <!-- Carte 2 -->
+    <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-2xl transition">
+      <h2 class="text-xl font-semibold mb-2">Carte 2</h2>
+      <p class="text-gray-600">On peut ajouter autant de cartes que nécessaire.</p>
+    </div>
+
+    <!-- Carte 3 -->
+    <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-2xl transition">
+      <h2 class="text-xl font-semibold mb-2">Carte 3</h2>
+      <p class="text-gray-600">Elles sont responsives grâce à Tailwind.</p>
+    </div>
+  </div>
 </body>
 </html>
